@@ -19,7 +19,7 @@ public class PostmanTest {
             // Проверки
             .then()
             .statusCode(200)
-            .body("data", equalTo ("Postman Test"));
+            .body("data", equalTo ("Postman test"));
   }
 
   @Test
@@ -35,7 +35,7 @@ public class PostmanTest {
             // Проверки
             .then()
             .statusCode(200)
-            .body("data", equalTo ("13.03.2024"));
+            .body("data", equalTo ("03.03.2024"));
   }
 
   @Test
@@ -52,7 +52,7 @@ public class PostmanTest {
             // Проверки
             .then()
             .statusCode(200)
-            .body("data", equalTo ("#$)*"));
+            .body("data", equalTo ("#$)-"));
   }
   @Test
   void shouldPostCyrillic() {
@@ -68,6 +68,6 @@ public class PostmanTest {
             // Проверки
             .then()
             .statusCode(200)
-            .body("data", equalTo ("Слова на кириллице"));
+            .body("data", equalTo ("cлова на кириллице"));
   }
 }
